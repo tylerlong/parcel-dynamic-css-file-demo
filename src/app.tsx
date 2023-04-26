@@ -35,7 +35,7 @@ const App = (props: { store: Store }) => {
         </Button>
         <Button
           onClick={() => {
-            const element = document.getElementById('dynamic-css') as HTMLStyleElement;
+            const element = document.getElementById('dynamic-css') as HTMLLinkElement;
             if (element.getAttribute('href') === css1) {
               element.setAttribute('href', css2);
             } else {
